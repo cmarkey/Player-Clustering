@@ -15,6 +15,10 @@ names = df['Player'].unique()
 players = pd.DataFrame({'Player': names})
 players = players.dropna()
 
+# adding positions
+pos = pd.read_csv('player_positions.csv')
+players = players.merge(pos, on='Player', how='left')
+
 # adding teams
 teams = df.set_index('Player')['Team']
 teams = teams.groupby(teams.index).first()
