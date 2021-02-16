@@ -50,7 +50,6 @@ goal_assists = df.loc[df['Goal Assist'], 'Player'].value_counts()
 players['Goal Assists'] = players['Player'].map(goal_assists)
 players = players.fillna(0)  # otherwise next total is just NaN
 players['Primary Assists'] = players['Shot Assists'] + players['Goal Assists']
-print(players[players['Team'] == 'Olympic (Women) - Olympic Athletes from Russia'])
 
 # adding complete passes
 complete_passes = df.loc[df['Event'] == 'Play', 'Player'].value_counts()
@@ -114,9 +113,6 @@ players['Danger Shots'] = players['Player'].map(dang_shots)
 players = players.fillna(0)
 players.to_csv('player_summary.csv')
 
-
-
-
 # setting up index dataframe
 indexes = players[['Player', 'Position', 'Team']].copy(deep=True)
 
@@ -126,30 +122,29 @@ team_grouping = players.groupby('Team')['Shots'].sum()
 index_calc = players.merge(team_grouping, on='Team', how='left')
 index_calc = index_calc.rename(columns={'Shots_x': 'Shots', 'Shots_y': 'Team Shots'})
 
-indexes['Shot Index'] = (index_calc['Shots'] / (index_calc['Team Shots']))  # *index_calc['Shots']/index_calc['GP']
+indexes['Shot Index'] = (index_calc['Shots'] / (index_calc['Team Shots']))*(index_calc['Shots']/index_calc['Games PLayed'])
 
 # computing primary shot assist (PSA) index
 team_grouping = players.groupby('Team')['Primary Assists'].sum()
 index_calc = players.merge(team_grouping, on='Team', how='left')
 index_calc = index_calc.rename(columns={'Primary Assists_x': 'PSA', 'Primary Assists_y': 'Team PSA'})
 
-indexes['PSA Index'] = (index_calc['PSA'] / (index_calc['Team PSA']))  # *index_calc['PSA']/index_calc['GP']
+indexes['PSA Index'] = (index_calc['PSA'] / (index_calc['Team PSA']))*(index_calc['PSA']/index_calc['Games PLayed'])
 
 # computing passing differential index
 team_grouping = players.groupby('Team')['Complete Passes'].sum()
 index_calc_1 = players.merge(team_grouping, on='Team', how='left')
 index_calc_1 = index_calc_1.rename(
     columns={'Complete Passes_x': 'Complete Passes', 'Complete Passes_y': 'Team Complete Passes'})
-
+print(index_calc_1)
 team_grouping = players.groupby('Team')['Incomplete Passes'].sum()
 index_calc_2 = players.merge(team_grouping, on='Team', how='left')
 index_calc_2 = index_calc_2.rename(
     columns={'Incomplete Passes_x': 'Incomplete Passes', 'Incomplete Passes_y': 'Team Incomplete Passes'})
 index_calc_2 = index_calc_2.fillna(0)
 
-indexes['Passing Index'] = (index_calc_1['Complete Passes'] + index_calc_2['Incomplete Passes']) / (
-            index_calc_1['Team Complete Passes'] + index_calc_2['Team Incomplete Passes'])
-# indexes['Passing Index'] = index_calc['Complete Passes']/index_calc['GP']-index_calc['Incomplete Passes']/index_calc['GP']
+indexes['Passing Index'] = (index_calc_1['Complete Passes'] + index_calc_2['Incomplete Passes']) / (index_calc_1['Team Complete Passes'] + index_calc_2['Team Incomplete Passes'])
+indexes['Passing Index'] *= index_calc_1['Complete Passes']/index_calc_1['Games PLayed']-index_calc_2['Incomplete Passes']/index_calc_2['Games PLayed']
 
 # computing entry differential index - INCOMPLETE
 team_grouping = players.groupby('Team')['Zone Carries'].sum()
@@ -163,40 +158,35 @@ index_calc_2 = index_calc_2.rename(
     columns={'Played Entries_x': 'Played Entries', 'Played Entries_y': 'Team Played Entries'})
 index_calc_2 = index_calc_2.fillna(0)
 
-indexes['Entry Index'] = (index_calc_1['Zone Carries'] + index_calc_2['Played Entries']) / (
-            index_calc_1['Team Zone Carries'] + index_calc_2['Team Played Entries'])
-# indexes['Entry Index'] = index_calc['Zone Carries']/index_calc['GP']-index_calc['Played Entries']/index_calc['GP']
+indexes['Entry Index'] = (index_calc_1['Zone Carries'] + index_calc_2['Played Entries']) / (index_calc_1['Team Zone Carries'] + index_calc_2['Team Played Entries'])
+indexes['Entry Index'] *= (index_calc_1['Zone Carries']/index_calc_1['Games PLayed']-index_calc_2['Played Entries']/index_calc_2['Games PLayed'])
 
 # computing danger pass index
 team_grouping = players.groupby('Team')['Danger Passes'].sum()
 index_calc = players.merge(team_grouping, on='Team', how='left')
 index_calc = index_calc.rename(columns={'Danger Passes_x': 'Danger Passes', 'Danger Passes_y': 'Team Danger Passes'})
 
-indexes['Danger Pass Index'] = (index_calc['Danger Passes'] / (
-index_calc['Team Danger Passes']))  # *index_calc['Shot Assists']/index_calc['GP']
+indexes['Danger Pass Index'] = (index_calc['Danger Passes'] / (index_calc['Team Danger Passes']))*index_calc['Danger Passes']/index_calc['Games PLayed']
 
 # computing danger shot index
 team_grouping = players.groupby('Team')['Danger Shots'].sum()
 index_calc = players.merge(team_grouping, on='Team', how='left')
 index_calc = index_calc.rename(columns={'Danger Shots_x': 'Danger Shots', 'Danger Shots_y': 'Team Danger Shots'})
 
-indexes['Danger Shot Index'] = (index_calc['Danger Shots'] / (
-index_calc['Team Danger Shots']))  # *index_calc['Shot Assists']/index_calc['GP']
+indexes['Danger Shot Index'] = (index_calc['Danger Shots'] / (index_calc['Team Danger Shots']))*index_calc['Danger Shots']/index_calc['Games PLayed']
 
 # computing takeaway set_index
 team_grouping = players.groupby('Team')['Takeaways'].sum()
 index_calc = players.merge(team_grouping, on='Team', how='left')
 index_calc = index_calc.rename(columns={'Takeaways_x': 'Takeaways', 'Takeaways_y': 'Team Takeaways'})
 
-indexes['Takeaways Index'] = (
-            index_calc['Takeaways'] / (index_calc['Team Takeaways']))  # *index_calc['Shot Assists']/index_calc['GP']
+indexes['Takeaways Index'] = (index_calc['Takeaways'] / (index_calc['Team Takeaways']))*index_calc['Takeaways']/index_calc['Games PLayed']
 
 # computing puck recovery index
 team_grouping = players.groupby('Team')['Puck Recoveries'].sum()
 index_calc = players.merge(team_grouping, on='Team', how='left')
-index_calc = index_calc.rename(
-    columns={'Puck Recoveries_x': 'Puck Recoveries', 'Puck Recoveries_y': 'Team Puck Recoveries'})
+index_calc = index_calc.rename(columns={'Puck Recoveries_x': 'Puck Recoveries', 'Puck Recoveries_y': 'Team Puck Recoveries'})
 
-indexes['Puck Recovery Index'] = (index_calc['Puck Recoveries'] / (
-index_calc['Team Puck Recoveries']))  # *index_calc['Shot Assists']/index_calc['GP']
-print(indexes)  # currently just showing percentage of x stat that player takes relative to their team
+indexes['Puck Recovery Index'] = (index_calc['Puck Recoveries'] / (index_calc['Team Puck Recoveries'])) *index_calc['Puck Recoveries']/index_calc['Games PLayed']
+indexes.to_csv('clustering_metrics.csv')
+print(indexes)
