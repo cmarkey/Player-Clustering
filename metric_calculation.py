@@ -144,7 +144,7 @@ index_calc_2 = index_calc_2.rename(
 index_calc_2 = index_calc_2.fillna(0)
 
 indexes['Passing Index'] = (index_calc_1['Complete Passes'] + index_calc_2['Incomplete Passes']) / (index_calc_1['Team Complete Passes'] + index_calc_2['Team Incomplete Passes'])
-indexes['Passing Index'] *= index_calc_1['Complete Passes']/index_calc_1['Games Played']-index_calc_2['Incomplete Passes']/index_calc_2['Games Played']
+indexes['Passing Index'] *= index_calc_1['Complete Passes']/index_calc_1['Games Played']+index_calc_2['Incomplete Passes']/index_calc_2['Games Played']
 
 # computing entry differential index
 team_grouping = players.groupby('Team')['Zone Carries'].sum()
@@ -165,7 +165,7 @@ index_calc_2 = index_calc_2.rename(
 index_calc_2 = index_calc_2.fillna(0)
 
 indexes['Entry Index'] = (index_calc_1['Zone Carries'] + index_calc_2['Played Entries'] + index_calc['Retained Dump Ins']) / (index_calc_1['Team Zone Carries'] + index_calc_2['Team Played Entries'] + index_calc['Team Retained Dump Ins'])
-indexes['Entry Index'] *= (index_calc_1['Zone Carries']/index_calc_1['Games Played']-index_calc_2['Played Entries']/index_calc_2['Games Played']-index_calc['Retained Dump Ins']/index_calc['Games Played'])
+indexes['Entry Index'] *= (index_calc_1['Zone Carries']/index_calc_1['Games Played']+index_calc_2['Played Entries']/index_calc_2['Games Played']+index_calc['Retained Dump Ins']/index_calc['Games Played'])
 
 # computing danger pass index
 team_grouping = players.groupby('Team')['Danger Passes'].sum()
