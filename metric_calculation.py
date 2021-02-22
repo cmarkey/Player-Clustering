@@ -23,6 +23,7 @@ players = players.dropna()
 pos = pd.read_csv('player_positions.csv')
 players = players.merge(pos, on='Player', how='left')
 
+
 # adding teams
 teams = df.set_index('Player')['Team']
 teams = teams.groupby(teams.index).first()
@@ -106,17 +107,19 @@ def determine_shot_danger(row):
     else:
         return False
 
-
 df['Danger Shot'] = df.apply(determine_shot_danger, axis=1)
 dang_shots = df.loc[df['Danger Shot'], 'Player'].value_counts()
 players['Danger Shots'] = players['Player'].map(dang_shots)
+
+
+#dropping goalies
 players = players.fillna(0)
+players = players.drop(players[players['Position'] == 'G'].index).reset_index(drop=True)
+print(players)
 players.to_csv('player_summary.csv')
 
 # setting up index dataframe
 indexes = players[['Player', 'Position', 'Team']].copy(deep=True)
-
-##WARNING: CODE IS INCOMPLETE PAST THIS POINT
 # computing shot index
 team_grouping = players.groupby('Team')['Shots'].sum()
 index_calc = players.merge(team_grouping, on='Team', how='left')
@@ -136,7 +139,6 @@ team_grouping = players.groupby('Team')['Complete Passes'].sum()
 index_calc_1 = players.merge(team_grouping, on='Team', how='left')
 index_calc_1 = index_calc_1.rename(
     columns={'Complete Passes_x': 'Complete Passes', 'Complete Passes_y': 'Team Complete Passes'})
-print(index_calc_1)
 team_grouping = players.groupby('Team')['Incomplete Passes'].sum()
 index_calc_2 = players.merge(team_grouping, on='Team', how='left')
 index_calc_2 = index_calc_2.rename(
@@ -194,5 +196,9 @@ index_calc = players.merge(team_grouping, on='Team', how='left')
 index_calc = index_calc.rename(columns={'Puck Recoveries_x': 'Puck Recoveries', 'Puck Recoveries_y': 'Team Puck Recoveries'})
 
 indexes['Puck Recovery Index'] = (index_calc['Puck Recoveries'] / (index_calc['Team Puck Recoveries'])) *index_calc['Puck Recoveries']/index_calc['Games Played']
-indexes.to_csv('clustering_metrics.csv')
 print(indexes)
+forward_indexes = indexes.drop(indexes[indexes['Position'] == 'D'].index).reset_index(drop=True)
+dman_indexes = indexes.drop(indexes[indexes['Position'] == 'F'].index).reset_index(drop=True)
+forward_indexes.to_csv('f_clustering_metrics.csv')
+dman_indexes.to_csv('d_clustering_metrics.csv')
+indexes.to_csv('clustering_metrics.csv')
