@@ -6,9 +6,7 @@ from sklearn.decomposition import PCA
 
 def pca_decomposition(file_name):
     #importing and formating data for PCA
-    full_indexes = pd.read_csv(file_name)[['Player', 'Position', 'Team', 'Shot Index',
-            'PSA Index', 'Passing Index', 'Entry Index', 'Danger Pass Index', 'Danger Shot Index',
-            'Takeaways Index', 'Puck Recovery Index']]
+    full_indexes = pd.read_csv(file_name)
     prepped_indexes = full_indexes[['Shot Index', 'PSA Index', 'Passing Index', 'Entry Index',
             'Danger Pass Index', 'Danger Shot Index','Takeaways Index',
             'Puck Recovery Index']].to_numpy()
@@ -80,10 +78,10 @@ def pca_decomposition(file_name):
     return index_df
 
 all_player_decomp = pca_decomposition('clustering_metrics.csv')
-all_player_decomp.to_csv('transformed_metrics.csv')
+all_player_decomp.to_csv('transformed_metrics.csv', index=False)
 
 forward_decomp = pca_decomposition('f_clustering_metrics.csv')
-forward_decomp.to_csv('f_transformed_metrics.csv')
+forward_decomp.to_csv('f_transformed_metrics.csv', index=False)
 
 dman_decomp = pca_decomposition('d_clustering_metrics.csv')
-dman_decomp.to_csv('d_transformed_metrics.csv')
+dman_decomp.to_csv('d_transformed_metrics.csv', index=False)
