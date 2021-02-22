@@ -82,6 +82,8 @@ def pca_decomposition(file_name):
 all_player_decomp = pca_decomposition('clustering_metrics.csv')
 all_player_decomp.to_csv('transformed_metrics.csv')
 
-
 forward_decomp = pca_decomposition('f_clustering_metrics.csv')
+forward_decomp.to_csv('f_transformed_metrics.csv')
+
 dman_decomp = pca_decomposition('d_clustering_metrics.csv')
+dman_decomp.to_csv('d_transformed_metrics.csv')
