@@ -111,11 +111,13 @@ df['Danger Shot'] = df.apply(determine_shot_danger, axis=1)
 dang_shots = df.loc[df['Danger Shot'], 'Player'].value_counts()
 players['Danger Shots'] = players['Player'].map(dang_shots)
 
-
-#dropping goalies
+#dropping goalies, splitting forwards and defensemen
 players = players.fillna(0)
 players = players.drop(players[players['Position'] == 'G'].index).reset_index(drop=True)
-print(players)
+forwards = players.drop(players[players['Position'] == 'D'].index).reset_index(drop=True)
+dmans = players.drop(players[players['Position'] == 'F'].index).reset_index(drop=True)
+forwards.to_csv('forward_summary.csv')
+dmans.to_csv('dman_summary.csv')
 players.to_csv('player_summary.csv')
 
 # setting up index dataframe
