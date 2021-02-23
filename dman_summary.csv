@@ -1,89 +1,89 @@
-,Player,Position,Team,Games Played,Shots,Goals,Total Shots,Shot Assists,Goal Assists,Primary Assists,Complete Passes,Incomplete Passes,Takeaways,Puck Recoveries,Zone Carries,Retained Dump Ins,Played Entries,Danger Passes,Danger Shots
-0,Meaghan Mikkelson,D,Olympic (Women) - Canada,5,10.0,0.0,10.0,4.0,0.0,4.0,112.0,23.0,7.0,93.0,3.0,4.0,0.0,5.0,1.0
-1,Maria Batalova,D,Olympic (Women) - Olympic Athletes from Russia,2,5.0,0.0,5.0,6.0,0.0,6.0,42.0,16.0,5.0,56.0,1.0,2.0,0.0,1.0,0.0
-2,Renata Fast,D,Olympic (Women) - Canada,10,22.0,0.0,22.0,10.0,0.0,10.0,185.0,84.0,27.0,217.0,14.0,3.0,2.0,7.0,3.0
-3,Yekaterina Nikolayeva,D,Olympic (Women) - Olympic Athletes from Russia,2,1.0,0.0,1.0,0.0,0.0,0.0,23.0,20.0,5.0,37.0,0.0,0.0,0.0,1.0,0.0
-4,Brigette Lacquette,D,Olympic (Women) - Canada,10,56.0,0.0,56.0,22.0,2.0,24.0,251.0,70.0,20.0,179.0,2.0,1.0,2.0,17.0,2.0
-5,Angelina Goncharenko,D,Olympic (Women) - Olympic Athletes from Russia,2,2.0,0.0,2.0,0.0,0.0,0.0,18.0,15.0,2.0,32.0,0.0,0.0,2.0,0.0,0.0
-6,Liana Ganeyeva,D,Olympic (Women) - Olympic Athletes from Russia,2,1.0,0.0,1.0,0.0,0.0,0.0,24.0,19.0,7.0,36.0,0.0,0.0,0.0,0.0,0.0
-7,Laura Fortino,D,Olympic (Women) - Canada,10,47.0,1.0,48.0,29.0,2.0,31.0,325.0,85.0,26.0,229.0,8.0,1.0,6.0,15.0,13.0
-8,Jocelyne Larocque,D,Olympic (Women) - Canada,10,25.0,0.0,25.0,12.0,0.0,12.0,215.0,78.0,22.0,205.0,6.0,7.0,3.0,6.0,2.0
-9,Lauriane Rougeau,D,Olympic (Women) - Canada,5,5.0,0.0,5.0,4.0,0.0,4.0,114.0,23.0,6.0,94.0,3.0,1.0,2.0,5.0,4.0
-10,Nina Pirogova,D,Olympic (Women) - Olympic Athletes from Russia,2,4.0,0.0,4.0,2.0,0.0,2.0,22.0,9.0,5.0,21.0,2.0,0.0,0.0,0.0,2.0
-11,Yekaterina Lovova,D,Olympic (Women) - Olympic Athletes from Russia,2,1.0,0.0,1.0,1.0,0.0,1.0,16.0,12.0,4.0,19.0,0.0,0.0,0.0,0.0,0.0
-12,Svetlana Tkachyova,D,Olympic (Women) - Olympic Athletes from Russia,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
-13,Isa Rahunen,D,Olympic (Women) - Finland,3,2.0,0.0,2.0,0.0,0.0,0.0,32.0,17.0,4.0,40.0,0.0,1.0,1.0,0.0,0.0
-14,Minnamari Tuominen,D,Olympic (Women) - Finland,3,16.0,0.0,16.0,5.0,0.0,5.0,56.0,19.0,5.0,51.0,1.0,3.0,2.0,5.0,1.0
-15,Ronja Savolainen,D,Olympic (Women) - Finland,3,11.0,2.0,13.0,2.0,0.0,2.0,65.0,22.0,8.0,84.0,5.0,1.0,1.0,2.0,3.0
-16,Rosa Lindstedt,D,Olympic (Women) - Finland,3,3.0,0.0,3.0,0.0,0.0,0.0,41.0,18.0,8.0,50.0,1.0,2.0,0.0,1.0,2.0
-17,Jenni Hiirikoski,D,Olympic (Women) - Finland,3,19.0,1.0,20.0,8.0,0.0,8.0,99.0,35.0,4.0,109.0,6.0,4.0,1.0,1.0,2.0
-18,Mira Jalosuo,D,Olympic (Women) - Finland,1,4.0,0.0,4.0,0.0,0.0,0.0,8.0,7.0,2.0,15.0,0.0,1.0,0.0,1.0,0.0
-19,Megan Keller,D,Olympic (Women) - United States,4,23.0,0.0,23.0,10.0,0.0,10.0,123.0,32.0,9.0,87.0,5.0,1.0,2.0,4.0,7.0
-20,Emily Pfalzer,D,Olympic (Women) - United States,7,30.0,0.0,30.0,16.0,0.0,16.0,190.0,62.0,16.0,167.0,9.0,3.0,2.0,9.0,7.0
-21,Kali Flanagan,D,Olympic (Women) - United States,2,3.0,0.0,3.0,1.0,0.0,1.0,19.0,11.0,6.0,20.0,5.0,0.0,0.0,3.0,2.0
-22,Sidney Morin,D,Olympic (Women) - United States,5,21.0,0.0,21.0,7.0,0.0,7.0,119.0,32.0,5.0,88.0,6.0,0.0,0.0,8.0,1.0
-23,Lee Stecklein,D,Olympic (Women) - United States,7,27.0,0.0,27.0,10.0,0.0,10.0,180.0,69.0,19.0,158.0,2.0,2.0,1.0,6.0,3.0
-24,Cayla Barnes,D,Olympic (Women) - United States,4,18.0,0.0,18.0,14.0,1.0,15.0,112.0,23.0,4.0,84.0,4.0,0.0,1.0,6.0,3.0
-25,Kacey Bellamy,D,Olympic (Women) - United States,7,44.0,0.0,44.0,20.0,1.0,21.0,226.0,71.0,16.0,171.0,3.0,0.0,6.0,8.0,2.0
-26,Ella Shelton,D,Clarkson Golden Knights,2,18.0,0.0,18.0,5.0,0.0,5.0,82.0,14.0,7.0,72.0,5.0,3.0,0.0,1.0,1.0
-27,Skylar Podvey,D,St. Lawrence Saints,2,9.0,0.0,9.0,1.0,1.0,2.0,37.0,6.0,6.0,44.0,3.0,4.0,1.0,1.0,2.0
-28,Taylor Turnquist,D,Clarkson Golden Knights,9,46.0,0.0,46.0,33.0,1.0,34.0,211.0,70.0,22.0,216.0,18.0,7.0,4.0,18.0,9.0
-29,Jacquie Diffley,D,St. Lawrence Saints,2,0.0,0.0,0.0,0.0,0.0,0.0,28.0,10.0,2.0,33.0,0.0,1.0,1.0,1.0,0.0
-30,Josiane Pozzebon,D,Clarkson Golden Knights,2,8.0,0.0,8.0,9.0,0.0,9.0,82.0,14.0,4.0,57.0,3.0,1.0,0.0,3.0,1.0
-31,Emma Keenan,D,Clarkson Golden Knights,2,8.0,0.0,8.0,1.0,0.0,1.0,51.0,15.0,5.0,53.0,2.0,2.0,0.0,0.0,0.0
-32,Lydia Grauer,D,St. Lawrence Saints,2,7.0,0.0,7.0,2.0,0.0,2.0,35.0,10.0,7.0,49.0,3.0,1.0,0.0,2.0,0.0
-33,Amanda Butterfield,D,St. Lawrence Saints,2,4.0,0.0,4.0,2.0,0.0,2.0,35.0,9.0,5.0,53.0,1.0,1.0,0.0,1.0,0.0
-34,Avery Mitchell,D,Clarkson Golden Knights,2,6.0,0.0,6.0,2.0,0.0,2.0,32.0,7.0,3.0,24.0,3.0,2.0,0.0,0.0,0.0
-35,Claire Dudley,D,St. Lawrence Saints,2,1.0,0.0,1.0,0.0,0.0,0.0,19.0,9.0,1.0,29.0,1.0,0.0,0.0,2.0,0.0
-36,Kristen Guerriero,D,St. Lawrence Saints,2,2.0,0.0,2.0,1.0,0.0,1.0,15.0,14.0,3.0,32.0,2.0,3.0,1.0,1.0,0.0
-37,Megan Bozek,D,Olympic (Women) - United States,5,22.0,0.0,22.0,5.0,0.0,5.0,94.0,41.0,8.0,117.0,2.0,4.0,1.0,4.0,4.0
-38,Erin Ambrose,D,Olympic (Women) - Canada,5,28.0,0.0,28.0,13.0,0.0,13.0,149.0,34.0,9.0,119.0,2.0,2.0,1.0,14.0,9.0
-39,Halli Krzyzaniak,D,Olympic (Women) - Canada,3,11.0,0.0,11.0,4.0,0.0,4.0,47.0,13.0,8.0,35.0,0.0,1.0,0.0,1.0,0.0
-40,Savannah Harmon,D,Olympic (Women) - United States,3,5.0,0.0,5.0,0.0,0.0,0.0,17.0,25.0,4.0,38.0,1.0,1.0,0.0,0.0,0.0
-41,Shelly Picard,D,Olympic (Women) - United States,4,5.0,0.0,5.0,3.0,0.0,3.0,48.0,18.0,4.0,51.0,0.0,0.0,0.0,1.0,2.0
-42,Katelyn Gosling,D,Olympic (Women) - Canada,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,2.0,1.0,3.0,0.0,0.0,0.0,0.0,0.0
-43,Mich Zandee-Hart,D,Olympic (Women) - Canada,2,5.0,0.0,5.0,1.0,0.0,1.0,21.0,12.0,0.0,22.0,1.0,1.0,0.0,3.0,1.0
-44,Jamie Bourbonnais,D,Olympic (Women) - Canada,1,1.0,0.0,1.0,1.0,0.0,1.0,5.0,5.0,1.0,6.0,0.0,0.0,0.0,1.0,0.0
-45,Nelli Laitinen,D,Olympic (Women) - Finland,2,5.0,0.0,5.0,0.0,0.0,0.0,15.0,6.0,1.0,16.0,1.0,1.0,0.0,0.0,1.0
-46,Ella Viitasuo,D,Olympic (Women) - Finland,2,0.0,0.0,0.0,0.0,0.0,0.0,2.0,3.0,0.0,4.0,0.0,1.0,0.0,0.0,0.0
-47,Mallory Souliotis,D,Boston Pride,7,32.0,3.0,35.0,9.0,0.0,9.0,175.0,84.0,22.0,196.0,8.0,3.0,4.0,30.0,4.0
-48,Sydney Baldwin,D,Minnesota Whitecaps,4,32.0,1.0,33.0,2.0,0.0,2.0,112.0,49.0,21.0,126.0,5.0,4.0,2.0,3.0,4.0
-49,Kaleigh Fratkin,D,Boston Pride,7,36.0,0.0,36.0,19.0,1.0,20.0,242.0,90.0,16.0,233.0,8.0,7.0,4.0,14.0,3.0
-50,Chelsey Brodt-Rosenthal,D,Minnesota Whitecaps,4,3.0,0.0,3.0,2.0,0.0,2.0,33.0,27.0,4.0,74.0,0.0,3.0,0.0,5.0,0.0
-51,Emma Stauber,D,Minnesota Whitecaps,4,11.0,0.0,11.0,3.0,1.0,4.0,70.0,40.0,6.0,81.0,4.0,0.0,1.0,4.0,3.0
-52,Winny Brodt-Brown,D,Minnesota Whitecaps,4,5.0,1.0,6.0,2.0,0.0,2.0,34.0,20.0,7.0,48.0,5.0,0.0,0.0,2.0,0.0
-53,Lauren Kelly,D,Boston Pride,7,42.0,2.0,44.0,8.0,0.0,8.0,142.0,77.0,19.0,174.0,5.0,5.0,3.0,12.0,4.0
-54,Jenna Rheault,D,Boston Pride,3,4.0,0.0,4.0,1.0,0.0,1.0,21.0,10.0,4.0,25.0,3.0,0.0,0.0,1.0,1.0
-55,Paige Capistran,D,Boston Pride,7,16.0,0.0,16.0,3.0,0.0,3.0,97.0,53.0,8.0,135.0,2.0,1.0,0.0,4.0,2.0
-56,Maddie Rowe,D,Minnesota Whitecaps,4,10.0,0.0,10.0,3.0,0.0,3.0,80.0,43.0,12.0,103.0,3.0,2.0,0.0,7.0,0.0
-57,Sara Bustad,D,Minnesota Whitecaps,4,12.0,0.0,12.0,0.0,0.0,0.0,27.0,20.0,2.0,45.0,1.0,1.0,0.0,1.0,1.0
-58,Lynn Astrup,D,Minnesota Whitecaps,4,2.0,0.0,2.0,0.0,0.0,0.0,3.0,5.0,2.0,7.0,2.0,0.0,0.0,1.0,2.0
-59,Rose Alleva,D,Minnesota Whitecaps,3,2.0,0.0,2.0,0.0,0.0,0.0,5.0,2.0,0.0,7.0,0.0,0.0,0.0,0.0,0.0
-60,Tori Howran,D,Connecticut Whale,3,13.0,1.0,14.0,9.0,1.0,10.0,74.0,35.0,13.0,90.0,6.0,1.0,0.0,6.0,0.0
-61,Shannon Doyle,D,Connecticut Whale,4,19.0,0.0,19.0,4.0,0.0,4.0,99.0,59.0,17.0,125.0,1.0,1.0,2.0,8.0,1.0
-62,Alyson Matteau,D,Buffalo Beauts,6,23.0,0.0,23.0,4.0,1.0,5.0,130.0,49.0,28.0,148.0,12.0,1.0,0.0,13.0,3.0
-63,Marie-Jo Pelletier,D,Buffalo Beauts,6,19.0,0.0,19.0,9.0,0.0,9.0,131.0,54.0,24.0,145.0,12.0,5.0,0.0,7.0,0.0
-64,Whitney Dove,D,Buffalo Beauts,6,23.0,0.0,23.0,5.0,0.0,5.0,105.0,51.0,15.0,149.0,16.0,2.0,1.0,5.0,2.0
-65,Dominique Kremer,D,Buffalo Beauts,6,16.0,0.0,16.0,5.0,0.0,5.0,99.0,58.0,29.0,134.0,15.0,3.0,1.0,15.0,6.0
-66,Maggie LaGue,D,Connecticut Whale,4,22.0,0.0,22.0,2.0,0.0,2.0,89.0,43.0,16.0,108.0,9.0,2.0,0.0,6.0,5.0
-67,Elena Orlando,D,Connecticut Whale,4,6.0,0.0,6.0,1.0,0.0,1.0,45.0,32.0,7.0,76.0,2.0,4.0,1.0,3.0,0.0
-68,Taylor Marchin,D,Connecticut Whale,4,10.0,0.0,10.0,2.0,0.0,2.0,48.0,39.0,9.0,74.0,1.0,3.0,0.0,8.0,0.0
-69,Megan Delay,D,Buffalo Beauts,6,14.0,0.0,14.0,2.0,0.0,2.0,44.0,42.0,14.0,92.0,3.0,0.0,0.0,2.0,1.0
-70,Hanna Beattie,D,Connecticut Whale,4,11.0,0.0,11.0,5.0,0.0,5.0,52.0,43.0,15.0,98.0,5.0,4.0,1.0,4.0,0.0
-71,Brittany Colton,D,Buffalo Beauts,6,5.0,0.0,5.0,1.0,0.0,1.0,18.0,8.0,5.0,30.0,9.0,1.0,0.0,2.0,1.0
-72,Lenka Curmova,D,Buffalo Beauts,6,15.0,0.0,15.0,2.0,0.0,2.0,50.0,41.0,21.0,88.0,4.0,2.0,0.0,3.0,4.0
-73,Emma Greco,D,Toronto Six,6,17.0,0.0,17.0,3.0,0.0,3.0,67.0,59.0,14.0,117.0,4.0,1.0,2.0,7.0,2.0
-74,Sammy Kolowrat,D,Metropolitan Riveters,3,5.0,0.0,5.0,1.0,0.0,1.0,46.0,38.0,8.0,82.0,3.0,3.0,0.0,1.0,0.0
-75,Kiira Dosdall,D,Metropolitan Riveters,3,17.0,0.0,17.0,6.0,0.0,6.0,91.0,34.0,8.0,88.0,5.0,3.0,1.0,6.0,0.0
-76,Sarah Steele,D,Toronto Six,6,17.0,0.0,17.0,14.0,0.0,14.0,158.0,55.0,11.0,141.0,3.0,1.0,2.0,10.0,1.0
-77,Megan Quinn,D,Toronto Six,6,15.0,1.0,16.0,10.0,0.0,10.0,107.0,46.0,11.0,137.0,0.0,2.0,0.0,3.0,0.0
-78,Leila Kilduff,D,Metropolitan Riveters,3,5.0,2.0,7.0,4.0,0.0,4.0,47.0,20.0,15.0,40.0,2.0,1.0,0.0,2.0,1.0
-79,Lindsay Eastwood,D,Toronto Six,6,36.0,1.0,37.0,14.0,1.0,15.0,150.0,70.0,17.0,152.0,7.0,4.0,2.0,13.0,2.0
-80,Rebecca Morse,D,Metropolitan Riveters,3,19.0,0.0,19.0,8.0,0.0,8.0,63.0,24.0,13.0,72.0,6.0,1.0,0.0,1.0,6.0
-81,Allie Olnowich,D,Metropolitan Riveters,3,10.0,0.0,10.0,1.0,0.0,1.0,23.0,7.0,5.0,31.0,1.0,1.0,0.0,1.0,1.0
-82,Kristen Barbara,D,Toronto Six,4,7.0,0.0,7.0,4.0,0.0,4.0,64.0,23.0,9.0,60.0,4.0,0.0,0.0,3.0,2.0
-83,Saroya Tinker,D,Metropolitan Riveters,3,7.0,0.0,7.0,2.0,0.0,2.0,46.0,16.0,5.0,56.0,0.0,5.0,1.0,2.0,0.0
-84,Briana Mastel,D,Boston Pride,5,13.0,0.0,13.0,4.0,0.0,4.0,69.0,33.0,6.0,102.0,2.0,3.0,0.0,3.0,1.0
-85,Laurel Hill,D,Connecticut Whale,2,3.0,0.0,3.0,0.0,0.0,0.0,14.0,15.0,2.0,26.0,0.0,0.0,0.0,0.0,0.0
-86,Lisa Chesson,D,Buffalo Beauts,3,9.0,1.0,10.0,1.0,0.0,1.0,46.0,29.0,8.0,62.0,3.0,0.0,0.0,3.0,5.0
-87,Rachael Ade,D,Connecticut Whale,1,4.0,0.0,4.0,0.0,0.0,0.0,6.0,2.0,2.0,11.0,2.0,1.0,0.0,1.0,2.0
+Player,Position,Team,Games Played,Shots,Goals,Total Shots,Shot Assists,Goal Assists,Primary Assists,Complete Passes,Incomplete Passes,Takeaways,Puck Recoveries,Zone Carries,Retained Dump Ins,Played Entries,Danger Passes,Danger Shots
+Meaghan Mikkelson,D,Olympic (Women) - Canada,5,10.0,0.0,10.0,4.0,0.0,4.0,112.0,23.0,7.0,93.0,3.0,4.0,0.0,5.0,1.0
+Maria Batalova,D,Olympic (Women) - Olympic Athletes from Russia,2,5.0,0.0,5.0,6.0,0.0,6.0,42.0,16.0,5.0,56.0,1.0,2.0,0.0,1.0,0.0
+Renata Fast,D,Olympic (Women) - Canada,10,22.0,0.0,22.0,10.0,0.0,10.0,185.0,84.0,27.0,217.0,14.0,3.0,2.0,7.0,3.0
+Yekaterina Nikolayeva,D,Olympic (Women) - Olympic Athletes from Russia,2,1.0,0.0,1.0,0.0,0.0,0.0,23.0,20.0,5.0,37.0,0.0,0.0,0.0,1.0,0.0
+Brigette Lacquette,D,Olympic (Women) - Canada,10,56.0,0.0,56.0,22.0,2.0,24.0,251.0,70.0,20.0,179.0,2.0,1.0,2.0,17.0,2.0
+Angelina Goncharenko,D,Olympic (Women) - Olympic Athletes from Russia,2,2.0,0.0,2.0,0.0,0.0,0.0,18.0,15.0,2.0,32.0,0.0,0.0,2.0,0.0,0.0
+Liana Ganeyeva,D,Olympic (Women) - Olympic Athletes from Russia,2,1.0,0.0,1.0,0.0,0.0,0.0,24.0,19.0,7.0,36.0,0.0,0.0,0.0,0.0,0.0
+Laura Fortino,D,Olympic (Women) - Canada,10,47.0,1.0,48.0,29.0,2.0,31.0,325.0,85.0,26.0,229.0,8.0,1.0,6.0,15.0,13.0
+Jocelyne Larocque,D,Olympic (Women) - Canada,10,25.0,0.0,25.0,12.0,0.0,12.0,215.0,78.0,22.0,205.0,6.0,7.0,3.0,6.0,2.0
+Lauriane Rougeau,D,Olympic (Women) - Canada,5,5.0,0.0,5.0,4.0,0.0,4.0,114.0,23.0,6.0,94.0,3.0,1.0,2.0,5.0,4.0
+Nina Pirogova,D,Olympic (Women) - Olympic Athletes from Russia,2,4.0,0.0,4.0,2.0,0.0,2.0,22.0,9.0,5.0,21.0,2.0,0.0,0.0,0.0,2.0
+Yekaterina Lovova,D,Olympic (Women) - Olympic Athletes from Russia,2,1.0,0.0,1.0,1.0,0.0,1.0,16.0,12.0,4.0,19.0,0.0,0.0,0.0,0.0,0.0
+Svetlana Tkachyova,D,Olympic (Women) - Olympic Athletes from Russia,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+Isa Rahunen,D,Olympic (Women) - Finland,3,2.0,0.0,2.0,0.0,0.0,0.0,32.0,17.0,4.0,40.0,0.0,1.0,1.0,0.0,0.0
+Minnamari Tuominen,D,Olympic (Women) - Finland,3,16.0,0.0,16.0,5.0,0.0,5.0,56.0,19.0,5.0,51.0,1.0,3.0,2.0,5.0,1.0
+Ronja Savolainen,D,Olympic (Women) - Finland,3,11.0,2.0,13.0,2.0,0.0,2.0,65.0,22.0,8.0,84.0,5.0,1.0,1.0,2.0,3.0
+Rosa Lindstedt,D,Olympic (Women) - Finland,3,3.0,0.0,3.0,0.0,0.0,0.0,41.0,18.0,8.0,50.0,1.0,2.0,0.0,1.0,2.0
+Jenni Hiirikoski,D,Olympic (Women) - Finland,3,19.0,1.0,20.0,8.0,0.0,8.0,99.0,35.0,4.0,109.0,6.0,4.0,1.0,1.0,2.0
+Mira Jalosuo,D,Olympic (Women) - Finland,1,4.0,0.0,4.0,0.0,0.0,0.0,8.0,7.0,2.0,15.0,0.0,1.0,0.0,1.0,0.0
+Megan Keller,D,Olympic (Women) - United States,4,23.0,0.0,23.0,10.0,0.0,10.0,123.0,32.0,9.0,87.0,5.0,1.0,2.0,4.0,7.0
+Emily Pfalzer,D,Olympic (Women) - United States,7,30.0,0.0,30.0,16.0,0.0,16.0,190.0,62.0,16.0,167.0,9.0,3.0,2.0,9.0,7.0
+Kali Flanagan,D,Olympic (Women) - United States,2,3.0,0.0,3.0,1.0,0.0,1.0,19.0,11.0,6.0,20.0,5.0,0.0,0.0,3.0,2.0
+Sidney Morin,D,Olympic (Women) - United States,5,21.0,0.0,21.0,7.0,0.0,7.0,119.0,32.0,5.0,88.0,6.0,0.0,0.0,8.0,1.0
+Lee Stecklein,D,Olympic (Women) - United States,7,27.0,0.0,27.0,10.0,0.0,10.0,180.0,69.0,19.0,158.0,2.0,2.0,1.0,6.0,3.0
+Cayla Barnes,D,Olympic (Women) - United States,4,18.0,0.0,18.0,14.0,1.0,15.0,112.0,23.0,4.0,84.0,4.0,0.0,1.0,6.0,3.0
+Kacey Bellamy,D,Olympic (Women) - United States,7,44.0,0.0,44.0,20.0,1.0,21.0,226.0,71.0,16.0,171.0,3.0,0.0,6.0,8.0,2.0
+Ella Shelton,D,Clarkson Golden Knights,2,18.0,0.0,18.0,5.0,0.0,5.0,82.0,14.0,7.0,72.0,5.0,3.0,0.0,1.0,1.0
+Skylar Podvey,D,St. Lawrence Saints,2,9.0,0.0,9.0,1.0,1.0,2.0,37.0,6.0,6.0,44.0,3.0,4.0,1.0,1.0,2.0
+Taylor Turnquist,D,Clarkson Golden Knights,9,46.0,0.0,46.0,33.0,1.0,34.0,211.0,70.0,22.0,216.0,18.0,7.0,4.0,18.0,9.0
+Jacquie Diffley,D,St. Lawrence Saints,2,0.0,0.0,0.0,0.0,0.0,0.0,28.0,10.0,2.0,33.0,0.0,1.0,1.0,1.0,0.0
+Josiane Pozzebon,D,Clarkson Golden Knights,2,8.0,0.0,8.0,9.0,0.0,9.0,82.0,14.0,4.0,57.0,3.0,1.0,0.0,3.0,1.0
+Emma Keenan,D,Clarkson Golden Knights,2,8.0,0.0,8.0,1.0,0.0,1.0,51.0,15.0,5.0,53.0,2.0,2.0,0.0,0.0,0.0
+Lydia Grauer,D,St. Lawrence Saints,2,7.0,0.0,7.0,2.0,0.0,2.0,35.0,10.0,7.0,49.0,3.0,1.0,0.0,2.0,0.0
+Amanda Butterfield,D,St. Lawrence Saints,2,4.0,0.0,4.0,2.0,0.0,2.0,35.0,9.0,5.0,53.0,1.0,1.0,0.0,1.0,0.0
+Avery Mitchell,D,Clarkson Golden Knights,2,6.0,0.0,6.0,2.0,0.0,2.0,32.0,7.0,3.0,24.0,3.0,2.0,0.0,0.0,0.0
+Claire Dudley,D,St. Lawrence Saints,2,1.0,0.0,1.0,0.0,0.0,0.0,19.0,9.0,1.0,29.0,1.0,0.0,0.0,2.0,0.0
+Kristen Guerriero,D,St. Lawrence Saints,2,2.0,0.0,2.0,1.0,0.0,1.0,15.0,14.0,3.0,32.0,2.0,3.0,1.0,1.0,0.0
+Megan Bozek,D,Olympic (Women) - United States,5,22.0,0.0,22.0,5.0,0.0,5.0,94.0,41.0,8.0,117.0,2.0,4.0,1.0,4.0,4.0
+Erin Ambrose,D,Olympic (Women) - Canada,5,28.0,0.0,28.0,13.0,0.0,13.0,149.0,34.0,9.0,119.0,2.0,2.0,1.0,14.0,9.0
+Halli Krzyzaniak,D,Olympic (Women) - Canada,3,11.0,0.0,11.0,4.0,0.0,4.0,47.0,13.0,8.0,35.0,0.0,1.0,0.0,1.0,0.0
+Savannah Harmon,D,Olympic (Women) - United States,3,5.0,0.0,5.0,0.0,0.0,0.0,17.0,25.0,4.0,38.0,1.0,1.0,0.0,0.0,0.0
+Shelly Picard,D,Olympic (Women) - United States,4,5.0,0.0,5.0,3.0,0.0,3.0,48.0,18.0,4.0,51.0,0.0,0.0,0.0,1.0,2.0
+Katelyn Gosling,D,Olympic (Women) - Canada,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,2.0,1.0,3.0,0.0,0.0,0.0,0.0,0.0
+Mich Zandee-Hart,D,Olympic (Women) - Canada,2,5.0,0.0,5.0,1.0,0.0,1.0,21.0,12.0,0.0,22.0,1.0,1.0,0.0,3.0,1.0
+Jamie Bourbonnais,D,Olympic (Women) - Canada,1,1.0,0.0,1.0,1.0,0.0,1.0,5.0,5.0,1.0,6.0,0.0,0.0,0.0,1.0,0.0
+Nelli Laitinen,D,Olympic (Women) - Finland,2,5.0,0.0,5.0,0.0,0.0,0.0,15.0,6.0,1.0,16.0,1.0,1.0,0.0,0.0,1.0
+Ella Viitasuo,D,Olympic (Women) - Finland,2,0.0,0.0,0.0,0.0,0.0,0.0,2.0,3.0,0.0,4.0,0.0,1.0,0.0,0.0,0.0
+Mallory Souliotis,D,Boston Pride,7,32.0,3.0,35.0,9.0,0.0,9.0,175.0,84.0,22.0,196.0,8.0,3.0,4.0,30.0,4.0
+Sydney Baldwin,D,Minnesota Whitecaps,4,32.0,1.0,33.0,2.0,0.0,2.0,112.0,49.0,21.0,126.0,5.0,4.0,2.0,3.0,4.0
+Kaleigh Fratkin,D,Boston Pride,7,36.0,0.0,36.0,19.0,1.0,20.0,242.0,90.0,16.0,233.0,8.0,7.0,4.0,14.0,3.0
+Chelsey Brodt-Rosenthal,D,Minnesota Whitecaps,4,3.0,0.0,3.0,2.0,0.0,2.0,33.0,27.0,4.0,74.0,0.0,3.0,0.0,5.0,0.0
+Emma Stauber,D,Minnesota Whitecaps,4,11.0,0.0,11.0,3.0,1.0,4.0,70.0,40.0,6.0,81.0,4.0,0.0,1.0,4.0,3.0
+Winny Brodt-Brown,D,Minnesota Whitecaps,4,5.0,1.0,6.0,2.0,0.0,2.0,34.0,20.0,7.0,48.0,5.0,0.0,0.0,2.0,0.0
+Lauren Kelly,D,Boston Pride,7,42.0,2.0,44.0,8.0,0.0,8.0,142.0,77.0,19.0,174.0,5.0,5.0,3.0,12.0,4.0
+Jenna Rheault,D,Boston Pride,3,4.0,0.0,4.0,1.0,0.0,1.0,21.0,10.0,4.0,25.0,3.0,0.0,0.0,1.0,1.0
+Paige Capistran,D,Boston Pride,7,16.0,0.0,16.0,3.0,0.0,3.0,97.0,53.0,8.0,135.0,2.0,1.0,0.0,4.0,2.0
+Maddie Rowe,D,Minnesota Whitecaps,4,10.0,0.0,10.0,3.0,0.0,3.0,80.0,43.0,12.0,103.0,3.0,2.0,0.0,7.0,0.0
+Sara Bustad,D,Minnesota Whitecaps,4,12.0,0.0,12.0,0.0,0.0,0.0,27.0,20.0,2.0,45.0,1.0,1.0,0.0,1.0,1.0
+Lynn Astrup,D,Minnesota Whitecaps,4,2.0,0.0,2.0,0.0,0.0,0.0,3.0,5.0,2.0,7.0,2.0,0.0,0.0,1.0,2.0
+Rose Alleva,D,Minnesota Whitecaps,3,2.0,0.0,2.0,0.0,0.0,0.0,5.0,2.0,0.0,7.0,0.0,0.0,0.0,0.0,0.0
+Tori Howran,D,Connecticut Whale,3,13.0,1.0,14.0,9.0,1.0,10.0,74.0,35.0,13.0,90.0,6.0,1.0,0.0,6.0,0.0
+Shannon Doyle,D,Connecticut Whale,4,19.0,0.0,19.0,4.0,0.0,4.0,99.0,59.0,17.0,125.0,1.0,1.0,2.0,8.0,1.0
+Alyson Matteau,D,Buffalo Beauts,6,23.0,0.0,23.0,4.0,1.0,5.0,130.0,49.0,28.0,148.0,12.0,1.0,0.0,13.0,3.0
+Marie-Jo Pelletier,D,Buffalo Beauts,6,19.0,0.0,19.0,9.0,0.0,9.0,131.0,54.0,24.0,145.0,12.0,5.0,0.0,7.0,0.0
+Whitney Dove,D,Buffalo Beauts,6,23.0,0.0,23.0,5.0,0.0,5.0,105.0,51.0,15.0,149.0,16.0,2.0,1.0,5.0,2.0
+Dominique Kremer,D,Buffalo Beauts,6,16.0,0.0,16.0,5.0,0.0,5.0,99.0,58.0,29.0,134.0,15.0,3.0,1.0,15.0,6.0
+Maggie LaGue,D,Connecticut Whale,4,22.0,0.0,22.0,2.0,0.0,2.0,89.0,43.0,16.0,108.0,9.0,2.0,0.0,6.0,5.0
+Elena Orlando,D,Connecticut Whale,4,6.0,0.0,6.0,1.0,0.0,1.0,45.0,32.0,7.0,76.0,2.0,4.0,1.0,3.0,0.0
+Taylor Marchin,D,Connecticut Whale,4,10.0,0.0,10.0,2.0,0.0,2.0,48.0,39.0,9.0,74.0,1.0,3.0,0.0,8.0,0.0
+Megan Delay,D,Buffalo Beauts,6,14.0,0.0,14.0,2.0,0.0,2.0,44.0,42.0,14.0,92.0,3.0,0.0,0.0,2.0,1.0
+Hanna Beattie,D,Connecticut Whale,4,11.0,0.0,11.0,5.0,0.0,5.0,52.0,43.0,15.0,98.0,5.0,4.0,1.0,4.0,0.0
+Brittany Colton,D,Buffalo Beauts,6,5.0,0.0,5.0,1.0,0.0,1.0,18.0,8.0,5.0,30.0,9.0,1.0,0.0,2.0,1.0
+Lenka Curmova,D,Buffalo Beauts,6,15.0,0.0,15.0,2.0,0.0,2.0,50.0,41.0,21.0,88.0,4.0,2.0,0.0,3.0,4.0
+Emma Greco,D,Toronto Six,6,17.0,0.0,17.0,3.0,0.0,3.0,67.0,59.0,14.0,117.0,4.0,1.0,2.0,7.0,2.0
+Sammy Kolowrat,D,Metropolitan Riveters,3,5.0,0.0,5.0,1.0,0.0,1.0,46.0,38.0,8.0,82.0,3.0,3.0,0.0,1.0,0.0
+Kiira Dosdall,D,Metropolitan Riveters,3,17.0,0.0,17.0,6.0,0.0,6.0,91.0,34.0,8.0,88.0,5.0,3.0,1.0,6.0,0.0
+Sarah Steele,D,Toronto Six,6,17.0,0.0,17.0,14.0,0.0,14.0,158.0,55.0,11.0,141.0,3.0,1.0,2.0,10.0,1.0
+Megan Quinn,D,Toronto Six,6,15.0,1.0,16.0,10.0,0.0,10.0,107.0,46.0,11.0,137.0,0.0,2.0,0.0,3.0,0.0
+Leila Kilduff,D,Metropolitan Riveters,3,5.0,2.0,7.0,4.0,0.0,4.0,47.0,20.0,15.0,40.0,2.0,1.0,0.0,2.0,1.0
+Lindsay Eastwood,D,Toronto Six,6,36.0,1.0,37.0,14.0,1.0,15.0,150.0,70.0,17.0,152.0,7.0,4.0,2.0,13.0,2.0
+Rebecca Morse,D,Metropolitan Riveters,3,19.0,0.0,19.0,8.0,0.0,8.0,63.0,24.0,13.0,72.0,6.0,1.0,0.0,1.0,6.0
+Allie Olnowich,D,Metropolitan Riveters,3,10.0,0.0,10.0,1.0,0.0,1.0,23.0,7.0,5.0,31.0,1.0,1.0,0.0,1.0,1.0
+Kristen Barbara,D,Toronto Six,4,7.0,0.0,7.0,4.0,0.0,4.0,64.0,23.0,9.0,60.0,4.0,0.0,0.0,3.0,2.0
+Saroya Tinker,D,Metropolitan Riveters,3,7.0,0.0,7.0,2.0,0.0,2.0,46.0,16.0,5.0,56.0,0.0,5.0,1.0,2.0,0.0
+Briana Mastel,D,Boston Pride,5,13.0,0.0,13.0,4.0,0.0,4.0,69.0,33.0,6.0,102.0,2.0,3.0,0.0,3.0,1.0
+Laurel Hill,D,Connecticut Whale,2,3.0,0.0,3.0,0.0,0.0,0.0,14.0,15.0,2.0,26.0,0.0,0.0,0.0,0.0,0.0
+Lisa Chesson,D,Buffalo Beauts,3,9.0,1.0,10.0,1.0,0.0,1.0,46.0,29.0,8.0,62.0,3.0,0.0,0.0,3.0,5.0
+Rachael Ade,D,Connecticut Whale,1,4.0,0.0,4.0,0.0,0.0,0.0,6.0,2.0,2.0,11.0,2.0,1.0,0.0,1.0,2.0

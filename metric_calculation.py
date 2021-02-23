@@ -116,9 +116,9 @@ players = players.fillna(0)
 players = players.drop(players[players['Position'] == 'G'].index).reset_index(drop=True)
 forwards = players.drop(players[players['Position'] == 'D'].index).reset_index(drop=True)
 dmans = players.drop(players[players['Position'] == 'F'].index).reset_index(drop=True)
-forwards.to_csv('forward_summary.csv')
-dmans.to_csv('dman_summary.csv')
-players.to_csv('player_summary.csv')
+forwards.to_csv('forward_summary.csv', index=False)
+dmans.to_csv('dman_summary.csv', index=False)
+players.to_csv('player_summary.csv', index=False)
 
 # setting up index dataframe
 indexes = players[['Player', 'Position', 'Team']].copy(deep=True)
