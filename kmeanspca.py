@@ -7,6 +7,7 @@ from sklearn.preprocessing import StandardScaler
 
 # Forwards
 df = pd.read_csv("f_transformed_metrics.csv")
+df_normal = pd.read_csv("f_clustering_metrics.csv")
 
 # normalizing variables
 scaler = StandardScaler()
@@ -14,7 +15,7 @@ df['Var1'] = scaler.fit_transform(df[["Var1"]])
 df['Var2'] = scaler.fit_transform(df[["Var2"]])
 
 # K Means Clustering
-kmeans = KMeans(init="k-means++", n_clusters=4, n_init=10, max_iter=300, random_state=26)
+kmeans = KMeans(init="k-means++", n_clusters=5, n_init=10, max_iter=300, random_state=26)
 kmeans = kmeans.fit(df[['Var1', 'Var2']])
 df.loc[:, 'labels'] = kmeans.labels_
 
@@ -26,16 +27,32 @@ plt.title("Forward")
 plt.show()
 df.to_csv('kmeanspca_results_f.csv', index=False)
 
-#Defenseman
+df_normal = df_normal.merge(df, on='Player', how='left')
+index_table_f = df_normal.groupby('labels').agg(['mean'])
+index_table_f.columns = index_table_f.columns.droplevel(1)
+index_table_f = index_table_f.round(decimals=3)
+
+fig, ax = plt.subplots()
+fig.patch.set_visible(False)
+ax.axis('off')
+ax.axis('tight')
+table = ax.table(cellText=index_table_f.values, colLabels=index_table_f.columns, rowLabels=index_table_f.index, loc='center')
+table.auto_set_font_size(False)
+table.set_fontsize(8)
+plt.show()
+
+
+# Defenseman
 
 df2 = pd.read_csv("d_transformed_metrics.csv")
+df_normal2 = pd.read_csv("d_clustering_metrics.csv")
 
 # normalizing variables
 df2['Var1'] = scaler.fit_transform(df2[["Var1"]])
 df2['Var2'] = scaler.fit_transform(df2[["Var2"]])
 
 # K Means Clustering
-kmeans = KMeans(init="k-means++", n_clusters=4, n_init=10, max_iter=300, random_state=26)
+kmeans = KMeans(init="k-means++", n_clusters=3, n_init=10, max_iter=300, random_state=26)
 kmeans = kmeans.fit(df2[['Var1', 'Var2']])
 df2.loc[:, 'labels'] = kmeans.labels_
 
@@ -45,7 +62,21 @@ plt.xlabel("Var1")
 plt.ylabel("Var2")
 plt.title("Defense")
 plt.show()
-df.to_csv('kmeanspca_results_d.csv', index=False)
+df2.to_csv('kmeanspca_results_d.csv', index=False)
+
+df_normal2 = df_normal2.merge(df2, on='Player', how='left')
+index_table_d = df_normal2.groupby('labels').agg(['mean'])
+index_table_d.columns = index_table_d.columns.droplevel(1)
+index_table_d = index_table_d.round(decimals=3)
+
+fig, ax = plt.subplots()
+fig.patch.set_visible(False)
+ax.axis('off')
+ax.axis('tight')
+table = ax.table(cellText=index_table_d.values, colLabels=index_table_d.columns, rowLabels=index_table_d.index, loc='center')
+table.auto_set_font_size(False)
+table.set_fontsize(8)
+plt.show()
 
 
 # kmeans_kwargs = {"init": "k-means++", "n_init": 10, "max_iter": 300, "random_state": 26, }
