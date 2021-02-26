@@ -31,6 +31,7 @@ df_normal = df_normal.merge(df, on='Player', how='left')
 index_table_f = df_normal.groupby('labels').agg(['mean'])
 index_table_f.columns = index_table_f.columns.droplevel(1)
 index_table_f = index_table_f.round(decimals=3)
+index_table_f['Count'] = [82, 25, 44, 1, 9]
 
 fig, ax = plt.subplots()
 fig.patch.set_visible(False)
@@ -68,6 +69,7 @@ df_normal2 = df_normal2.merge(df2, on='Player', how='left')
 index_table_d = df_normal2.groupby('labels').agg(['mean'])
 index_table_d.columns = index_table_d.columns.droplevel(1)
 index_table_d = index_table_d.round(decimals=3)
+index_table_d['Count'] = [28, 17, 43]
 
 fig, ax = plt.subplots()
 fig.patch.set_visible(False)

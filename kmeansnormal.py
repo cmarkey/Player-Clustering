@@ -28,6 +28,7 @@ df.to_csv('kmeans_results_f.csv', index=False)
 index_table_f = df.groupby('labels').agg(['mean'])
 index_table_f.columns = index_table_f.columns.droplevel(1)
 index_table_f = index_table_f.round(decimals=3)
+index_table_f['Count'] = [16, 56, 9, 76, 1, 3]
 
 fig, ax = plt.subplots()
 fig.patch.set_visible(False)
@@ -61,6 +62,7 @@ df2.to_csv('kmeans_results_d.csv', index=False)
 index_table_d = df2.groupby('labels').agg(['mean'])
 index_table_d.columns = index_table_d.columns.droplevel(1)
 index_table_d = index_table_d.round(decimals=3)
+index_table_d['Count'] = [60, 27, 1]
 
 fig, ax = plt.subplots()
 fig.patch.set_visible(False)
