@@ -19,6 +19,8 @@ kmeans = KMeans(init="k-means++", n_clusters=5, n_init=10, max_iter=300, random_
 kmeans = kmeans.fit(df[['Var1', 'Var2']])
 df.loc[:, 'labels'] = kmeans.labels_
 
+df.loc[df['Player'] == "Valeria Pavlova", 'labels'] = 1
+
 plt.style.use("fivethirtyeight")
 plt.scatter("Var1", "Var2", data=df, c="labels",cmap="tab10")
 plt.xlabel("Var1")
@@ -31,7 +33,7 @@ df_normal = df_normal.merge(df, on='Player', how='left')
 index_table_f = df_normal.groupby('labels').agg(['mean'])
 index_table_f.columns = index_table_f.columns.droplevel(1)
 index_table_f = index_table_f.round(decimals=3)
-index_table_f['Count'] = [82, 25, 44, 1, 9]
+index_table_f['Count'] = [82, 26, 44, 9]
 
 fig, ax = plt.subplots()
 fig.patch.set_visible(False)
