@@ -27,6 +27,10 @@ plt.xlabel("Var1")
 plt.ylabel("Var2")
 plt.title("Forward")
 plt.show()
+df.loc[(df.labels == 0), 'labels'] = 'Dependent'
+df.loc[(df.labels == 1), 'labels'] = 'Shooter'
+df.loc[(df.labels == 2), 'labels'] = 'Balanced'
+df.loc[(df.labels == 4), 'labels'] = 'Playmaker'
 df.to_csv('kmeanspca_results_f.csv', index=False)
 
 df_normal = df_normal.merge(df, on='Player', how='left')
@@ -34,6 +38,7 @@ index_table_f = df_normal.groupby('labels').agg(['mean'])
 index_table_f.columns = index_table_f.columns.droplevel(1)
 index_table_f = index_table_f.round(decimals=3)
 index_table_f['Count'] = [82, 26, 44, 9]
+index_table_f.rename(index={0: 'Dependent', 1: 'Shooter', 2: 'Balanced', 4: 'Playmaker'}, inplace=True)
 
 fig, ax = plt.subplots()
 fig.patch.set_visible(False)
@@ -65,6 +70,9 @@ plt.xlabel("Var1")
 plt.ylabel("Var2")
 plt.title("Defense")
 plt.show()
+df2.loc[(df2.labels == 0), 'labels'] = 'Disruptor'
+df2.loc[(df2.labels == 1), 'labels'] = 'Two-Way'
+df2.loc[(df2.labels == 2), 'labels'] = 'Defensive'
 df2.to_csv('kmeanspca_results_d.csv', index=False)
 
 df_normal2 = df_normal2.merge(df2, on='Player', how='left')
@@ -72,6 +80,7 @@ index_table_d = df_normal2.groupby('labels').agg(['mean'])
 index_table_d.columns = index_table_d.columns.droplevel(1)
 index_table_d = index_table_d.round(decimals=3)
 index_table_d['Count'] = [28, 17, 43]
+index_table_d.rename(index={0: 'Disruptor', 1: 'Two-Way', 2: 'Defensive'}, inplace=True)
 
 fig, ax = plt.subplots()
 fig.patch.set_visible(False)
