@@ -4,6 +4,9 @@ from kneed import KneeLocator
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 from sklearn.preprocessing import StandardScaler
+from matplotlib import rcParams
+
+rcParams.update({'figure.autolayout': True})
 
 # Forwards
 df = pd.read_csv("f_transformed_metrics.csv")
@@ -23,17 +26,19 @@ df.loc[df['Player'] == "Valeria Pavlova", 'labels'] = 1
 
 plt.style.use("fivethirtyeight")
 plt.scatter("Var1", "Var2", data=df, c="labels",cmap="tab10")
-plt.xlabel("Var1")
-plt.ylabel("Var2")
-plt.title("Forward")
+plt.xlabel("PCA Variable 1", fontsize=12)
+plt.ylabel("PCA Variable 2", fontsize=12)
+plt.title("Forwards", fontsize=16)
+plt.savefig('f_pca.png')
 plt.show()
 df.loc[(df.labels == 0), 'labels'] = 'Dependent'
 df.loc[(df.labels == 1), 'labels'] = 'Shooter'
 df.loc[(df.labels == 2), 'labels'] = 'Balanced'
 df.loc[(df.labels == 4), 'labels'] = 'Playmaker'
-df.to_csv('kmeanspca_results_f.csv', index=False)
+
 
 df_normal = df_normal.merge(df, on='Player', how='left')
+df_normal.to_csv('kmeanspca_results_f.csv', index=False)
 index_table_f = df_normal.groupby('labels').agg(['mean'])
 index_table_f.columns = index_table_f.columns.droplevel(1)
 index_table_f = index_table_f.round(decimals=3)
@@ -66,16 +71,17 @@ df2.loc[:, 'labels'] = kmeans.labels_
 
 plt.style.use("fivethirtyeight")
 plt.scatter("Var1", "Var2", data=df2, c="labels",cmap="tab10")
-plt.xlabel("Var1")
-plt.ylabel("Var2")
-plt.title("Defense")
+plt.xlabel("PCA Variable 3", fontsize=12)
+plt.ylabel("PCA Variable 4", fontsize=12)
+plt.title("Defenders", fontsize=16)
+plt.savefig('d_pca.png')
 plt.show()
 df2.loc[(df2.labels == 0), 'labels'] = 'Disruptor'
 df2.loc[(df2.labels == 1), 'labels'] = 'Two-Way'
 df2.loc[(df2.labels == 2), 'labels'] = 'Defensive'
-df2.to_csv('kmeanspca_results_d.csv', index=False)
 
 df_normal2 = df_normal2.merge(df2, on='Player', how='left')
+df_normal2.to_csv('kmeanspca_results_d.csv', index=False)
 index_table_d = df_normal2.groupby('labels').agg(['mean'])
 index_table_d.columns = index_table_d.columns.droplevel(1)
 index_table_d = index_table_d.round(decimals=3)
@@ -96,14 +102,16 @@ plt.show()
 # sse = []
 # for k in range(1, 11):
 #     kmeans = KMeans(n_clusters = k, **kmeans_kwargs)
-#     kmeans.fit(df[['Var1', 'Var2']])
+#     kmeans.fit(df2[['Var1', 'Var2']])
 #     sse.append(kmeans.inertia_)
 #
 # plt.style.use("fivethirtyeight")
 # plt.plot(range(1, 11), sse)
 # plt.xticks(range(1, 11))
-# plt.xlabel("Number of Clusters")
-# plt.ylabel("SSE")
+# plt.xlabel("Number of Clusters", fontsize=12)
+# plt.ylabel("SSE", fontsize=12)
+# plt.title("Defense Elbow Graph", fontsize=16)
+# plt.savefig('d_elbow.png')
 # plt.show()
 #
 # kl = KneeLocator(range(1, 11), sse, curve="convex", direction="decreasing")
@@ -112,13 +120,15 @@ plt.show()
 # silhouette_coefficients = []
 # for k in range(2, 11):
 #     kmeans = KMeans(n_clusters=k, **kmeans_kwargs)
-#     kmeans.fit(df[['Var1', 'Var2']])
-#     score = silhouette_score(df[['Var1', 'Var2']], kmeans.labels_)
+#     kmeans.fit(df2[['Var1', 'Var2']])
+#     score = silhouette_score(df2[['Var1', 'Var2']], kmeans.labels_)
 #     silhouette_coefficients.append(score)
 #
 # plt.style.use("fivethirtyeight")
 # plt.plot(range(2, 11), silhouette_coefficients)
 # plt.xticks(range(2, 11))
-# plt.xlabel("Number of Clusters")
-# plt.ylabel("Silhouette Coefficient")
+# plt.xlabel("Number of Clusters", fontsize=12)
+# plt.ylabel("Silhouette Coefficient", fontsize=12)
+# plt.title("Defense Silhouette Scores", fontsize=16)
+# plt.savefig('d_silhouette.png')
 # plt.show()
